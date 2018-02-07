@@ -52,9 +52,26 @@
 
 /* items */
 
-.theme img {
-    height: 200px;
+#active a {
+    display: block;
+    color: white;
+    background-color: black;
+    width: 9em;
+    padding: .2em .8em;
+    margin-top: 2px;
+    text-decoration: none;
 }
+
+.theme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.theme img {
+    width: 100%;
+}
+
+
 
 .container > * {
     color: #353535;
@@ -197,6 +214,11 @@ nav ul a:hover {
 
 @media only screen and (min-width: 1000px) {
 
+    .theme img {
+    width: 100%;
+    height: 200px;
+}
+    
     /* grid */
     .container {
         grid-template-columns: repeat(6, 3fr);
@@ -215,7 +237,9 @@ nav ul a:hover {
         grid-column: span 2;
     }
     .container .typewriter {
-        grid-column: span 5;
+        /*        grid-column: span 5;*/
+        grid-column-end: 7;
+        margin-right: 10%;
     }
     .container .aboutMe {
         grid-column: span 3;
@@ -246,6 +270,15 @@ nav ul a:hover {
     .nume {
         margin-top: 10px;
     }
+    /*
+    h1{
+        display: flex;
+    }
+    .container .typewriter{
+        min-width: 1000px;
+        display: flex;
+    }
+*/
 }
 
 @media only screen and (max-width: 700px) {
@@ -266,7 +299,9 @@ nav ul a:hover {
     .typewriter {
         padding-top: 0;
     }
-
+     .container .theme {
+        grid-column: span 2;
+    }
     /* nav styles */
     nav {
         margin-top: 10%;
@@ -283,6 +318,7 @@ nav ul a:hover {
         order: 1;
         margin: 0;
     }
+   
 
 }
 
