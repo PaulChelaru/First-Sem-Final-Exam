@@ -53,8 +53,8 @@
 /* items */
 
 .theme img {
-        height: 200px;
-    }
+    height: 200px;
+}
 
 .container > * {
     color: #353535;
@@ -85,7 +85,7 @@ img {
     width: 100%;
 }
 
-p{
+p {
     text-align: center;
 }
 
@@ -98,7 +98,7 @@ p{
 nav ul {
     display: block;
     float: right;
-    opacity: 0.6;,
+    opacity: 0.6;
 }
 
 a {
@@ -178,7 +178,7 @@ nav ul a:hover {
         grid-column: span 1;
     }
 
-    
+
     /* nav styles */
     nav ul li {
         display: inline-block;
@@ -192,7 +192,7 @@ nav ul a:hover {
     .nume {
         margin-top: 10px;
     }
-    
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -202,7 +202,7 @@ nav ul a:hover {
         grid-template-columns: repeat(6, 3fr);
     }
 
-     /*specific item styles */
+    /*specific item styles */
     .container header,
     .container nav,
     .container footer {
@@ -226,7 +226,7 @@ nav ul a:hover {
     .container .theme {
         grid-column: span 2;
     }
-    .container #theme4{
+    .container #theme4 {
         grid-column-start: 2;
         grid-column-end: 6;
     }
@@ -259,14 +259,14 @@ nav ul a:hover {
     }
 
     .nume {
-        margin-top: 7px;;
+        margin-top: 7px;
         font-size: 135%;
     }
 
     .typewriter {
         padding-top: 0;
     }
-    
+
     /* nav styles */
     nav {
         margin-top: 10%;
@@ -284,4 +284,40 @@ nav ul a:hover {
         margin: 0;
     }
 
+}
+
+@media only screen and (max-width: 800px) {
+    .typewriter {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .typewriter {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .typewriter {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .typewriter {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .typewriter {
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .typewriter {
+        font-size: 0.5em;
+    }
 }
