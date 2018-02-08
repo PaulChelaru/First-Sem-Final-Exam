@@ -1,3 +1,4 @@
+
 /* /// Typing animation */
 
 /* DEMO-SPECIFIC STYLES */
@@ -53,25 +54,28 @@
 /* items */
 
 /*Back button */
+
 .myButton {
     grid-column: span 2;
     text-align: center;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	font-family:Arial;
-	font-weight:bold;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
 }
+
 .myButton:hover {
-	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-	background-color:#e9e9e9;
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
 }
+
 .myButton:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
 
@@ -86,11 +90,12 @@
     text-decoration: none;
 }
 
-.theme{
+.theme {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .theme img {
     width: 100%;
 }
@@ -128,7 +133,20 @@ img {
 
 p {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
+
+.theme img:hover {
+  animation-name: fade;
+  animation-duration: 1.5s;
+    
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 /* nav styles */
 
@@ -239,17 +257,15 @@ nav ul a:hover {
 @media only screen and (min-width: 1000px) {
 
     .theme img {
-    width: 100%;
-    height: 200px;
-}
-   
-/*
+        width: 100%;
+        height: 200px;
+    }
+
+    /*
     .myButton{
         
     }
 */
-    
-    
     /* grid */
     .container {
         grid-template-columns: repeat(6, 3fr);
@@ -285,16 +301,16 @@ nav ul a:hover {
         grid-column-start: 2;
         grid-column-end: 6;
     }
-    .themee{
+    .themee {
         grid-row-start: 3;
         grid-column: span 2;
     }
-    .themee1{
+    .themee1 {
         grid-row-start: 4;
         grid-column: span 2;
     }
-    
-    .themee2{
+
+    .themee2 {
         grid-row-start: 5;
         grid-column: span 2;
     }
@@ -343,11 +359,13 @@ nav ul a:hover {
     .typewriter {
         padding-top: 0;
     }
-    
-    .container .themee, .container .themee1,.container .themee2{
+
+    .container .themee,
+    .container .themee1,
+    .container .themee2 {
         grid-column: span 2;
     }
-     .container .theme {
+    .container .theme {
         grid-column: span 2;
     }
     /* nav styles */
@@ -366,7 +384,7 @@ nav ul a:hover {
         order: 1;
         margin: 0;
     }
-   
+
 
 }
 
