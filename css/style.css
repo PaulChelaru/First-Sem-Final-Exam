@@ -221,7 +221,8 @@ nav ul a:hover {
     /* specific item styles */
     .container header,
     .container nav,
-    .container footer {
+    .container footer,
+    .container .slideShow{
         grid-column: span 2;
     }
     .container section {
@@ -314,7 +315,10 @@ nav ul a:hover {
         grid-row-start: 5;
         grid-column: span 2;
     }
-
+    .container .slideShow{
+        grid-column: span 6;
+        grid-row-end: 4;
+    }
 
 
     /* nav styles */
@@ -329,6 +333,11 @@ nav ul a:hover {
     /* items */
     .nume {
         margin-top: 10px;
+    }
+    
+    .slideShow img{
+        width: 60%;
+        margin-left: 20%;
     }
     /*
     h1{
@@ -362,7 +371,8 @@ nav ul a:hover {
 
     .container .themee,
     .container .themee1,
-    .container .themee2 {
+    .container .themee2,
+    .container .slideShow{
         grid-column: span 2;
     }
     .container .theme {

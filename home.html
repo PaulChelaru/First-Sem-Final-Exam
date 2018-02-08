@@ -2,7 +2,6 @@
 <html lang="">
 
 <head>
-    <script src="java.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee|Oswald|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
@@ -33,8 +32,41 @@
         <div class="typewriter">
             <h1>Welcome to my Portofolio Website</h1>
         </div>
+        
+            <div class="slideShow">
+        <img class="mySlides" src="img/imgSlideShow/34447583885a8101554e56c80a725588--programming-humor-python-programming.jpg" alt="" >
+        <img class="mySlides" src="img/imgSlideShow/web-designer-developer-jokes-humour-funny-1.jpg" alt="">
+        <img class="mySlides" src="img/imgSlideShow/web-designer-developer-jokes-humour-funny-14.jpg" alt="">
+        <img class="mySlides" src="img/imgSlideShow/web-designer-developer-jokes-humour-funny-41.jpg" alt="">
     </div>
 
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+        
+        
+    </div>
+
+
+
+    
 </body>
 
 </html>
