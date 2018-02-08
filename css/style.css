@@ -1,4 +1,3 @@
-
 /* /// Typing animation */
 
 /* DEMO-SPECIFIC STYLES */
@@ -136,15 +135,22 @@ p {
     font-family: 'Roboto Slab', serif;
 }
 
-.theme img:hover {
-  animation-name: fade;
-  animation-duration: 1.5s;
-    
+.theme img:hover,
+.themee img:hover,
+.themee1 img:hover,
+.themee2 img:hover {
+    animation-name: fade;
+    animation-duration: 1.5s;
+
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
@@ -222,7 +228,7 @@ nav ul a:hover {
     .container header,
     .container nav,
     .container footer,
-    .container .slideShow{
+    .container .slideShow {
         grid-column: span 2;
     }
     .container section {
@@ -315,7 +321,7 @@ nav ul a:hover {
         grid-row-start: 5;
         grid-column: span 2;
     }
-    .container .slideShow{
+    .container .slideShow {
         grid-column: span 6;
         grid-row-end: 4;
     }
@@ -334,8 +340,8 @@ nav ul a:hover {
     .nume {
         margin-top: 10px;
     }
-    
-    .slideShow img{
+
+    .slideShow img {
         width: 60%;
         margin-left: 20%;
     }
@@ -372,7 +378,7 @@ nav ul a:hover {
     .container .themee,
     .container .themee1,
     .container .themee2,
-    .container .slideShow{
+    .container .slideShow {
         grid-column: span 2;
     }
     .container .theme {
