@@ -242,6 +242,13 @@ nav ul a:hover {
     width: 100%;
     height: 200px;
 }
+   
+/*
+    .myButton{
+        
+    }
+*/
+    
     
     /* grid */
     .container {
@@ -277,6 +284,19 @@ nav ul a:hover {
     .container #theme4 {
         grid-column-start: 2;
         grid-column-end: 6;
+    }
+    .themee{
+        grid-row-start: 3;
+        grid-column: span 2;
+    }
+    .themee1{
+        grid-row-start: 4;
+        grid-column: span 2;
+    }
+    
+    .themee2{
+        grid-row-start: 5;
+        grid-column: span 2;
     }
 
 
@@ -322,6 +342,10 @@ nav ul a:hover {
 
     .typewriter {
         padding-top: 0;
+    }
+    
+    .container .themee, .container .themee1,.container .themee2{
+        grid-column: span 2;
     }
      .container .theme {
         grid-column: span 2;
