@@ -322,6 +322,12 @@ nav ul a:hover {
         grid-row-start: 5;
         grid-column: span 2;
     }
+    
+    .themee3 {
+        grid-row-start: 6;
+        grid-column: span 2;
+    }
+    
     .container .slideShow {
         grid-column: span 6;
         grid-row-end: 4;
